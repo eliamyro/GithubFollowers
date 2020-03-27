@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  GithubFollowers
+
+  Created by Elias Myronidis on 22/2/20.
+  Copyright © 2020 Elias Myronidis. All rights reserved.
+*/
+
+"get_followers" = "Get Followers";
+"ok" = "Ok";
+"title_default" = "Something went wrong";
+"title_error" = "Bad things happened";
+"message_default" = "Unable to complete request";
+"public_repos" = "Public Repos";
+"public_gists" = "Public Gists";
+"followers" = "Followers";
+"following" = "Following";
+"invalidUrlTitle" = "Invalid URL";
+"invalidUrlMessage" = "The url attached to this user is invalid";
+"noFollowersTitle" = "No followers";
+"noFollowersMessage" = "This user has no followers. What a shame!";
+"empty_username_title" = "Empty Username";
+"empty_username_message" = "Please enter a username. We need to know who to look for!";
+"invalid_username" = "This username created an invalid request. Please try again.";
+"unable_to_complete" = "Unable to complete your request. Please check your internet connection.";
+"invalid_response" = "Invalid response from the server. Please try again.";
+"invalid_data" = "The data received from the server was invalid. Please try again.";
