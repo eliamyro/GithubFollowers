@@ -33,17 +33,8 @@ class FollowerCell: UICollectionViewCell {
         }
     }
     
-    lazy var avatarImageView: GFAvatarImageView = {
-        let imageView = GFAvatarImageView(frame: .zero)
-        
-        return imageView
-    }()
-    
-    lazy var usernameLabel: GFTitleLabel = {
-        let label = GFTitleLabel(textAlignment: .center, fontSize: 16)
-        
-        return label
-    }()
+    lazy var avatarImageView = GFAvatarImageView(frame: .zero)
+    lazy var usernameLabel = GFTitleLabel(textAlignment: .center, fontSize: 16)
     
     // MARK: - Lifecycle
     
