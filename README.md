@@ -14,3 +14,5 @@ The user is able to save his favorite github accounts and have access to them th
 ![screen3](https://user-images.githubusercontent.com/12696030/77791703-ce1e6280-706f-11ea-825c-84362df5cf7d.png)
 ![screen4_dark](https://user-images.githubusercontent.com/12696030/77791705-ce1e6280-706f-11ea-9891-49eea23f9568.png)
 ![screen4](https://user-images.githubusercontent.com/12696030/77791706-ceb6f900-706f-11ea-8147-f27bb153ba6c.png)
+![screen_fav_dark](https://user-images.githubusercontent.com/12696030/77828443-16975800-7124-11ea-9ab0-1f317c43101e.png)
+![screen_fav](https://user-images.githubusercontent.com/12696030/77828444-18f9b200-7124-11ea-8047-23a3a768d8b5.png)
