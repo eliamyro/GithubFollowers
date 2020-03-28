@@ -2,9 +2,9 @@
 An iOS application where we can search for a github account and view its followers, github profile and various info.
 The user is able to save his favorite github accounts and have access to them through the Favorites tab.
 
-• Implemented programmatically without the use of storyboards.
-• No libraries used.
-• Support for light & dark mode.
+• Implemented programmatically without the use of storyboards.<br>
+• No libraries used.<br>
+• Support for light & dark mode.<br>
 
 ![screen1_dark](https://user-images.githubusercontent.com/12696030/77791688-c9f24500-706f-11ea-8880-606fd66748f6.png)
 ![screen1](https://user-images.githubusercontent.com/12696030/77791692-cb237200-706f-11ea-9aed-239b47510c1f.png) 
