@@ -128,7 +128,28 @@ class FollowersListVC: UIViewController {
     // MARK: - Selectors
     
     @objc private func handleAddButton() {
-        print("Add button tapped")
+        showLoadingView()
+        guard let username = username else { return }
+        
+        NetworkManager.shared.getUserInfo(for: username) { [weak self] result in
+            guard let self = self else { return }
+            self.dismissLoadingView()
+            
+            switch result {
+            case .success(let user):
+                let favorite = Follower(login: user.login, avatarUrl: user.avatarUrl)
+                PersistenceManager.updateWith(favorite: favorite, actionType: .add) { error in
+                    guard let error = error else {
+                        self.presentGFAlertOnMainThread(title: Text.success, message: Text.favoritedSuccessful, buttonTitle: Text.ok)
+                        return
+                    }
+                    
+                    self.presentGFAlertOnMainThread(title: Text.errorTitleDefault, message: error.rawValue, buttonTitle: Text.ok)
+                }
+            case .failure(let error):
+                self.presentGFAlertOnMainThread(title: Text.errorTitleDefault, message: error.rawValue, buttonTitle: Text.ok)
+            }
+        }
     }
 }
 

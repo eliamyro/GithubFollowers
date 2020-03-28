@@ -23,5 +23,14 @@ class FavoritesListVC: UIViewController {
         
         label.center(inView: view)
         label.text = "Hello There"
+        
+        PersistenceManager.retrieveFavorites { result in
+            switch result {
+            case .success(let followers):
+                print(followers)
+            case .failure(let error):
+                break
+            }
+        }
     }
 }

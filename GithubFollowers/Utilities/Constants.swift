@@ -36,4 +36,6 @@ enum Text {
     static let noFollowersMessage = NSLocalizedString("noFollowersMessage", comment: "No followers message")
     static let emptyUsernameTitle = NSLocalizedString("empty_username_title", comment: "Empty username title")
     static let emptyUsernameMessage = NSLocalizedString("empty_username_message", comment: "Empty username message")
+    static let success = NSLocalizedString("success", comment: "Success")
+    static let favoritedSuccessful = NSLocalizedString("favorited_successful", comment: "Favorited successful")
 }

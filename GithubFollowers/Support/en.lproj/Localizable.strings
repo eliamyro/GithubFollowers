@@ -25,3 +25,5 @@
 "unable_to_complete" = "Unable to complete your request. Please check your internet connection.";
 "invalid_response" = "Invalid response from the server. Please try again.";
 "invalid_data" = "The data received from the server was invalid. Please try again.";
+"success" = "Success";
+"favorited_successful" = "You have successfully favorited this user!";
