@@ -38,4 +38,6 @@ enum Text {
     static let emptyUsernameMessage = NSLocalizedString("empty_username_message", comment: "Empty username message")
     static let success = NSLocalizedString("success", comment: "Success")
     static let favoritedSuccessful = NSLocalizedString("favorited_successful", comment: "Favorited successful")
+    static let favorites = NSLocalizedString("favorites", comment: "Favorites")
+    static let noFavorites = NSLocalizedString("no_favorites", comment: "No favorites")
 }

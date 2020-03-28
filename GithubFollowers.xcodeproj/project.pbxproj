@@ -26,6 +26,7 @@
 		81293BB324056E8D00877A8A /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81293BB224056E8D00877A8A /* Follower.swift */; };
 		81293BB524056F6D00877A8A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81293BB424056F6D00877A8A /* User.swift */; };
 		81293BB82405785600877A8A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81293BB72405785600877A8A /* NetworkManager.swift */; };
+		8129BE7A242FA64D00BE276B /* FavoritesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8129BE79242FA64D00BE276B /* FavoritesListView.swift */; };
 		812BC8D7240EDAD0002FDED6 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812BC8D6240EDAD0002FDED6 /* UserInfoVC.swift */; };
 		812C51DE2406D95900EB0389 /* FollowersListUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812C51DD2406D95900EB0389 /* FollowersListUI.swift */; };
 		813897B72410E8460050BA3E /* FollowersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813897B62410E8460050BA3E /* FollowersView.swift */; };
@@ -75,6 +76,7 @@
 		81293BB224056E8D00877A8A /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		81293BB424056F6D00877A8A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		81293BB72405785600877A8A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8129BE79242FA64D00BE276B /* FavoritesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListView.swift; sourceTree = "<group>"; };
 		812BC8D6240EDAD0002FDED6 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 		812C51DD2406D95900EB0389 /* FollowersListUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListUI.swift; sourceTree = "<group>"; };
 		813897B62410E8460050BA3E /* FollowersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersView.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				8160521224008A9B004F993E /* FavoritesListVC.swift */,
+				8129BE79242FA64D00BE276B /* FavoritesListView.swift */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				81124CBE24018A5500F3C529 /* GFTextField.swift in Sources */,
 				812415082406A65E0028D808 /* GFError.swift in Sources */,
 				8124150D2406B6AE0028D808 /* GFAvatarImageView.swift in Sources */,
+				8129BE7A242FA64D00BE276B /* FavoritesListView.swift in Sources */,
 				81293BB324056E8D00877A8A /* Follower.swift in Sources */,
 				81F5A465240454D400C7015E /* UIViewController+Ext.swift in Sources */,
 				810788632414290D005C0A63 /* Constants.swift in Sources */,

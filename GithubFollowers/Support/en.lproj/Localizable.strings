@@ -15,6 +15,7 @@
 "public_gists" = "Public Gists";
 "followers" = "Followers";
 "following" = "Following";
+"favorites" = "Favorites";
 "invalidUrlTitle" = "Invalid URL";
 "invalidUrlMessage" = "The url attached to this user is invalid";
 "noFollowersTitle" = "No followers";
@@ -27,3 +28,4 @@
 "invalid_data" = "The data received from the server was invalid. Please try again.";
 "success" = "Success";
 "favorited_successful" = "You have successfully favorited this user!";
+"no_favorites" = "No favorites?\nAdd one on the follower screen.";

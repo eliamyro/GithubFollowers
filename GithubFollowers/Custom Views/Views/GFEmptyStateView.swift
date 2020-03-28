@@ -54,6 +54,8 @@ class GFEmptyStateView: UIView {
     // MARK: - Helpers
     
     private func configureUI() {
+        backgroundColor = .systemBackground
+        
         addViews()
         anchorViews()
     }
