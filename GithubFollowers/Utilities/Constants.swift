@@ -6,7 +6,7 @@
 //  Copyright © 2020 Elias Myronidis. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 enum SFSymbols {
     static let location = "mappin.and.ellipse"
@@ -40,4 +40,9 @@ enum Text {
     static let favoritedSuccessful = NSLocalizedString("favorited_successful", comment: "Favorited successful")
     static let favorites = NSLocalizedString("favorites", comment: "Favorites")
     static let noFavorites = NSLocalizedString("no_favorites", comment: "No favorites")
+}
+
+enum Image {
+    static let avatarPlaceholder = UIImage(named: "avatar-placeholder")
+    static let githubLogo = UIImage(named: "gh-logo") 
 }

@@ -12,11 +12,9 @@ class SearchView: UIView {
     
     // MARK: - Properties
     
-    private let LOGO_IMG = "gh-logo"
-    
     lazy var logoImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: LOGO_IMG)
+        imageView.image = Image.githubLogo
         
         return imageView
     }()
@@ -53,7 +51,8 @@ class SearchView: UIView {
     }
     
     private func anchorViews() {
-        logoImageView.anchor(top: safeAreaLayoutGuide.topAnchor, margin: .init(top: 80, left: 0, bottom: 0, right: 0), size: .init(width: 200, height: 200))
+        let topPadding: CGFloat = UIDevice().type == .iPhoneSE ? 20 : 80
+        logoImageView.anchor(top: safeAreaLayoutGuide.topAnchor, margin: .init(top: topPadding, left: 0, bottom: 0, right: 0), size: .init(width: 200, height: 200))
         logoImageView.centerX(inView: self)
         
         usernameTextField.anchor(top: logoImageView.bottomAnchor, leading: leadingAnchor, trailing: trailingAnchor, margin: .init(top: 48, left: 50, bottom: 0, right: 50), size: .init(width: 0, height: 50))

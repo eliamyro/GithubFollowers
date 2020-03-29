@@ -67,7 +67,6 @@ class FollowersListVC: UIViewController {
     var filteredFollowers = [Follower]()
     private var page = 1
     private var hasMoreFollowers = true
-//    private var isSearching = false
     
     // MARK: - Lifecycle
     
@@ -89,7 +88,6 @@ class FollowersListVC: UIViewController {
     
     private func configure() {
         navigationItem.searchController = searchController
-        navigationItem.hidesSearchBarWhenScrolling = false
         navigationItem.rightBarButtonItem = addBarButton
     }
     
@@ -105,8 +103,7 @@ class FollowersListVC: UIViewController {
                     if followers.count < 100 { self.hasMoreFollowers = false }
                     self.followers.append(contentsOf: followers)
                     if self.followers.isEmpty {
-                        let message = "This user doesn't have any followers. Go follow him. 🙂"
-                        DispatchQueue.main.async { self.showEmptyStateView(with: message, in: self.view) }
+                        DispatchQueue.main.async { self.showEmptyStateView(with: Text.noFollowersMessage, in: self.view) }
                         return
                     }
                     self.updateData(on: self.followers)

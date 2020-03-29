@@ -12,7 +12,7 @@ class GFAvatarImageView: UIImageView {
     
     // MARK: - Properties
     
-    let placeholderImage = UIImage(named: "avatar-placeholder")!
+    let placeholderImage = Image.avatarPlaceholder!
     let cache = NetworkManager.shared.cache
     
     // MARK: - Lifecycle

@@ -66,8 +66,9 @@ class GFEmptyStateView: UIView {
     }
     
     private func anchorViews() {
+        let centerYConstant: CGFloat = UIDevice().type == .iPhoneSE ? -120 : -150
         messageLabel.anchor(leading: leadingAnchor, trailing: trailingAnchor, margin: .init(top: 0, left: 40, bottom: 0, right: 40), size: .init(width: 0, height: 200))
-        messageLabel.centerY(inView: self, constant: -150)
+        messageLabel.centerY(inView: self, constant: centerYConstant)
         
         logoImageView.anchor(bottom: bottomAnchor, trailing: trailingAnchor, margin: .init(top: 0, left: 0, bottom: -40, right: -200))
         logoImageView.anchorHW(height: widthAnchor, width: widthAnchor, hMultiplier: 1.3, wMultiplier: 1.3)

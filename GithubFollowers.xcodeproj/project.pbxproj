@@ -36,6 +36,8 @@
 		81896A5E240C186E0019348F /* GFLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81896A5D240C186E0019348F /* GFLoadingView.swift */; };
 		818992B924115C4100992D7D /* FollowersListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818992B824115C4100992D7D /* FollowersListVC.swift */; };
 		818A7F562410309500CCD268 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818A7F552410309500CCD268 /* SearchView.swift */; };
+		81A218AF2430B144007EC42A /* GFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A218AE2430B144007EC42A /* GFTabBarController.swift */; };
+		81A218B32430B9FD007EC42A /* DeviceTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A218B22430B9FD007EC42A /* DeviceTypes.swift */; };
 		81B80313240827E700C7FE47 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B80312240827E700C7FE47 /* UIHelper.swift */; };
 		81C4D915242272A000AEE651 /* GFItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C4D914242272A000AEE651 /* GFItemInfoView.swift */; };
 		81C4D91724227CA100AEE651 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C4D91624227CA100AEE651 /* UIView+Ext.swift */; };
@@ -86,6 +88,8 @@
 		81896A5D240C186E0019348F /* GFLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFLoadingView.swift; sourceTree = "<group>"; };
 		818992B824115C4100992D7D /* FollowersListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListVC.swift; sourceTree = "<group>"; };
 		818A7F552410309500CCD268 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		81A218AE2430B144007EC42A /* GFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTabBarController.swift; sourceTree = "<group>"; };
+		81A218B22430B9FD007EC42A /* DeviceTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypes.swift; sourceTree = "<group>"; };
 		81B80312240827E700C7FE47 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		81C4D914242272A000AEE651 /* GFItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoView.swift; sourceTree = "<group>"; };
 		81C4D91624227CA100AEE651 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 				812415072406A65E0028D808 /* GFError.swift */,
 				81B80312240827E700C7FE47 /* UIHelper.swift */,
 				810788622414290D005C0A63 /* Constants.swift */,
+				81A218B22430B9FD007EC42A /* DeviceTypes.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 		81847DD324053FF700B87043 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				81A218AD2430B10B007EC42A /* TabBarControllers */,
 				815A8E7B240C4DF700B14862 /* Views */,
 				815A8E7A240C4DEC00B14862 /* ImageViews */,
 				815A8E79240C4DE100B14862 /* Buttons */,
@@ -330,6 +336,14 @@
 				81F5A46224043DA200C7015E /* GFAlertView.swift */,
 			);
 			path = GFAlert;
+			sourceTree = "<group>";
+		};
+		81A218AD2430B10B007EC42A /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				81A218AE2430B144007EC42A /* GFTabBarController.swift */,
+			);
+			path = TabBarControllers;
 			sourceTree = "<group>";
 		};
 		81F41868242626820048662E /* GFUserInfoHeader */ = {
@@ -426,6 +440,7 @@
 			files = (
 				81C4D91724227CA100AEE651 /* UIView+Ext.swift in Sources */,
 				81124CBE24018A5500F3C529 /* GFTextField.swift in Sources */,
+				81A218AF2430B144007EC42A /* GFTabBarController.swift in Sources */,
 				812415082406A65E0028D808 /* GFError.swift in Sources */,
 				8124150D2406B6AE0028D808 /* GFAvatarImageView.swift in Sources */,
 				8129BE7A242FA64D00BE276B /* FavoritesListView.swift in Sources */,
@@ -463,6 +478,7 @@
 				81B80313240827E700C7FE47 /* UIHelper.swift in Sources */,
 				81C4D915242272A000AEE651 /* GFItemInfoView.swift in Sources */,
 				81CEAA84242F89F600EC7C52 /* FavoriteCell.swift in Sources */,
+				81A218B32430B9FD007EC42A /* DeviceTypes.swift in Sources */,
 				81078861241412F4005C0A63 /* GFUserInfoHeaderView.swift in Sources */,
 				812BC8D7240EDAD0002FDED6 /* UserInfoVC.swift in Sources */,
 			);
