@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FavoritesListVC: UIViewController {
+class FavoritesListVC: GFDataLoadingVC {
     
     // MARK: - Properties
     
@@ -103,6 +103,10 @@ extension FavoritesListVC: UITableViewDelegate, UITableViewDataSource {
             guard let error = error else { return }
             
             self.presentGFAlertOnMainThread(title: Text.errorTitleDefault, message: error.rawValue, buttonTitle: Text.ok)
+        }
+        
+        if favorites.isEmpty {
+            showEmptyStateView(with: Text.noFavorites, in: cView)
         }
     }
 }

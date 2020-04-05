@@ -18,18 +18,10 @@ class FollowerCell: UICollectionViewCell {
         didSet {
             guard let follower = follower else { return }
             usernameLabel.text = follower.login
-            avatarImageView.getImage(from: follower.avatarUrl)
-            
-//            NetworkManager.shared.getImage(from: follower.avatarUrl) { [weak self] result in
-//                guard let self = self else { return }
-//
-//                switch result {
-//                case .success(let image):
-//                    DispatchQueue.main.async {
-//                        self.avatarImageView.image = image
-//                    }
-//                }
-//            }
+            NetworkManager.shared.downloadImage(from: follower.avatarUrl) { [weak self] image in
+                guard let self = self else { return }
+                DispatchQueue.main.async { self.avatarImageView.image = image }
+            }
         }
     }
     

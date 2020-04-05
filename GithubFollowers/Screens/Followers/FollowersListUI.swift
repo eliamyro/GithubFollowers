@@ -20,13 +20,4 @@ extension FollowersListVC {
     private func configureFollowersCollectionView() {
         view.addSubview(followersCollectionView)
     }
-    
-    func showLoadingView() {
-        view.addSubview(loadingView)
-        loadingView.fadeIn()
-    }
-    
-    func dismissLoadingView() {
-        DispatchQueue.main.async { self.loadingView.removeFromSuperview() }
-    }
 }

@@ -10,6 +10,8 @@ import UIKit
 
 extension String {
     
+    // Unused cause we are using a dateDecodingStrategy
+    
     func convertToDate() -> Date? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

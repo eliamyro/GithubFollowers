@@ -12,7 +12,7 @@ protocol FollowersListVCDelegate: class {
     func didRequestFollowers(for username: String)
 }
 
-class FollowersListVC: UIViewController {
+class FollowersListVC: GFDataLoadingVC {
     
     // MARK: - Properties
     
@@ -42,9 +42,9 @@ class FollowersListVC: UIViewController {
         return difDataSource
     }()
     
-    lazy var loadingView: GFLoadingView = {
-        return GFLoadingView(frame: view.bounds)
-    }()
+//    lazy var loadingView: GFLoadingView = {
+//        return GFLoadingView(frame: view.bounds)
+//    }()
     
     lazy var searchController: UISearchController = {
         let search = UISearchController()

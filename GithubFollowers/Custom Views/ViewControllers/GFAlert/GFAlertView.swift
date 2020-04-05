@@ -12,16 +12,7 @@ class GFAlertView: UIView {
     
     // MARK: - Properties
     
-    lazy var containerView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .systemBackground
-        view.layer.cornerRadius = 16
-        view.layer.borderWidth = 2
-        view.layer.borderColor = UIColor.white.cgColor
-        view.translatesAutoresizingMaskIntoConstraints = false
-        
-        return view
-    }()
+    lazy var containerView = GFAlertContainerView()
     
     lazy var titleLabel = GFTitleLabel(textAlignment: .center, fontSize: 20)
     
